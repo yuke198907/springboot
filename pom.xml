@@ -84,6 +84,7 @@
             <scope>true</scope>
         </dependency>
 
+        <!--PDF转换图片-->
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>fontbox</artifactId>
