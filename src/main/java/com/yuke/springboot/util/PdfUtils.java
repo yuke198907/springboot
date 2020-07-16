@@ -66,9 +66,9 @@ public class PdfUtils {
                     singleImgRGB = image.getRGB(0, 0, width, imageHeight, null, 0, width);
                     imageResult.setRGB(0, shiftHeight, width, imageHeight, singleImgRGB, 0, width);
                 }
-                System.out.println("m = " + m);
+                //System.out.println("m = " + m);
                 File outFile = new File(pdfPath.replace(".pdf", "_" + m + ".jpg"));
-                System.out.println(outFile.getName());
+                //System.out.println(outFile.getName());
                 // 写图片
                 ImageIO.write(imageResult, "jpg", outFile);
                 // 这个很重要，下面会有说明
