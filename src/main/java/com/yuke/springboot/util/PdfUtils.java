@@ -11,7 +11,13 @@ import java.io.IOException;
 import static org.apache.pdfbox.rendering.ImageType.RGB;
 
 public class PdfUtils {
-
+    /**
+     *
+     * @param pdfPath
+     * @param dpi
+     * @param pageLength
+     * @throws IOException
+     */
     public static void pdfToImage(String pdfPath, int dpi, int pageLength) throws IOException {
         try {
             /*图像合并使用参数*/
