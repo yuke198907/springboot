@@ -57,3 +57,7 @@ mybatis-plus:
     #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     # 返回类型为Map,显示null对应的字段
     call-setters-on-nulls: true
+
+config:
+  webservice:
+    deptuser: http://localhost:8081/springboot/ws/deptUserService
