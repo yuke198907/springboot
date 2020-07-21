@@ -9,10 +9,6 @@ import javax.xml.ws.soap.SOAPBinding;
 @WebService(targetNamespace = "http://GetUserInfoService.com/")
 @BindingType(value = SOAPBinding.SOAP11HTTP_BINDING)
 public interface DeptUserService {
-
-    public static String FAILURE = "1";
-    public static String SUCCESS = "0";
-
     /**
      * 更新各应用系统的用户信息
      * @param model
