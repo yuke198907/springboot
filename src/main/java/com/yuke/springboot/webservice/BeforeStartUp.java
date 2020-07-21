@@ -21,10 +21,6 @@ public class BeforeStartUp implements ApplicationListener<ContextRefreshedEvent>
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        if(deptUserService == null){
-            log.info("================================================null");
-        }
-
         Endpoint.publish(address, deptUserService);
         log.info("webService 服务发布成功！！！");
         log.info("wsdl地址："+address+"?wsdl");
