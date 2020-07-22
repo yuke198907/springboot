@@ -10,7 +10,7 @@ import javax.xml.ws.soap.SOAPBinding;
 @BindingType(value = SOAPBinding.SOAP11HTTP_BINDING)
 public interface DeptUserService {
     /**
-     * 更新各应用系统的用户信息
+     * 更新用户信息
      * @param model
      * @param userInfo
      * @return
@@ -20,7 +20,7 @@ public interface DeptUserService {
                                  @WebParam(name = "UserInfo", targetNamespace = "http://GetUserInfoService.com/")String userInfo);
 
     /**
-     * 更新各应用系统的组织信息
+     * 更新组织信息
      * @param model
      * @param deptInfo
      * @return
