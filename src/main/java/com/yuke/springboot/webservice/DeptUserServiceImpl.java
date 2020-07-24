@@ -17,7 +17,7 @@ public class DeptUserServiceImpl implements DeptUserService {
     public String updateUserInfo(String model, String userInfo) {
         log.info("接受到更新数据updateUserInfo 开始");
         log.info("model = " +model + "   userInfo = " + userInfo);
-        return "1";
+        return "ok";
     }
 
     @Override
