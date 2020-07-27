@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @Slf4j
 @WebServlet(urlPatterns = "/deptUser.do")
@@ -23,8 +22,8 @@ public class DeptUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         log.info("开始...");
-        PrintWriter out = response.getWriter();
+        /*PrintWriter out = response.getWriter();
         out.println("ok");
-        out.close();
+        out.close();*/
     }
 }
