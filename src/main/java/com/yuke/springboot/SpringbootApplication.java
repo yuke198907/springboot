@@ -27,7 +27,7 @@ public class SpringbootApplication extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) throws UnknownHostException {
-        //System.setProperty("spring.devtools.restart.enabled", "true");
+        System.setProperty("spring.devtools.restart.enabled", "true");
 
         ConfigurableApplicationContext application = SpringApplication.run(SpringbootApplication.class, args);
         Environment env = application.getEnvironment();
@@ -35,7 +35,7 @@ public class SpringbootApplication extends SpringBootServletInitializer {
         String port = env.getProperty("server.port");
         String path = env.getProperty("server.servlet.context-path");
         log.info("\n----------------------------------------------------------\n\t" +
-                "Application Capinfo-Smp is running! \n\t" +
+                "Application is running! \n\t" +
                 "----------------------------------------------------------");
 
     }
